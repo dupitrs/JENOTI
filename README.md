@@ -1,6 +1,6 @@
 # RRBET Raivis Reinfelds DP3-4
 
-RRBET būs azartspēļu website, kur būs iespējams spēlēt trīs spēles. Tās būs Black Jack, Rullete un Slot machine.
+Mērķis ir palīdzēt cilvēkiem kam ir atkarība no azartspēlēm, spēlējot spēles bezmaksas. RRBET būs azartspēļu website, kur būs iespējams spēlēt trīs spēles. Tās būs Black Jack, Rullete un Slot machine.
 Website protams varēs ielagoties un uztaisīt jaunu kontu pie tam visi konti, balance un paroles būs saglabātas datubāzē.
 Būs iespējams apskatīt savu kontu un tā kā šī nauda nebūs īsta to varēs lēnām iegūt klikšķinot deposit pogu.
 Savu balance varēs paaugstināt vai zaudēt spēlējot azaertspēles. Katrā spēlē būs savi koeficenti, konetkti un iespējas (100% godīgi iespējams).
