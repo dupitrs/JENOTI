@@ -1,6 +1,6 @@
 img {
     padding: 5px;
-    width: 800px;
+    width: 200px;
   }
 
 .footer {
@@ -30,18 +30,69 @@ img {
 
 
 
-.button {
-  background-color: #4CAF50; /* Green background */
-  color: white;              /* White text */
-  padding: 15px 32px;        /* Padding around the button */
-  font-size: 16px;           /* Text size */
-  border: none;              /* Remove border */
-  border-radius: 5px;        /* Rounded corners */
-  cursor: pointer;           /* Pointer cursor on hover */
-  text-align: center;        /* Center text */
-  display: inline-block;     /* Allow it to behave like a button */
+/* General button styling */
+button {
+  background-color: #f0f0f0;  
+  border: 2px solid #ccc;     
+  border-radius: 10px;        
+  padding: 10px 20px;         
+  font-family: "Cursive Lucida Handwriting", "Lucida", Cursive;
+  font-size: 16px;            
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
 }
 
-.button:hover {
-  background-color: #45a049; /* Darker green on hover */
+button img {
+  width: 200px;  
+  height: auto; 
+}
+
+
+button:hover {
+  background-color: #ddd; 
+}
+
+
+.bbutton button {
+  background-color: #000000;  
+  color: white;               
+}
+
+.bbutton button:hover {
+  background-color: #ff1a1a; 
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+
+
+.bbbutton button {
+  background-color: #000000;  
+  color: white;               
+}
+
+.bbbutton button:hover {
+  background-color: #45a049; 
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+
+
+.bbbbutton button {
+  background-color: #000000;  
+  color: white;               
+}
+
+.bbbbutton button:hover {
+  background-color: #0b7dda; 
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+
+.podzinas {
+  display: flex;              /* Use flexbox to arrange items in a row */
+  justify-content: space-around; /* Add space between buttons */
+  align-items: center;        /* Vertically center items */
+  gap: 20px;                  /* Add space between the buttons */
+  margin: 20px;               /* Add some space around the container */
 }
