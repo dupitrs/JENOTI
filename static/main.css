@@ -1,5 +1,5 @@
 img {
-    padding: 25px;
+    padding: 5px;
     width: 800px;
   }
 
@@ -30,4 +30,18 @@ img {
 
 
 
+.button {
+  background-color: #4CAF50; /* Green background */
+  color: white;              /* White text */
+  padding: 15px 32px;        /* Padding around the button */
+  font-size: 16px;           /* Text size */
+  border: none;              /* Remove border */
+  border-radius: 5px;        /* Rounded corners */
+  cursor: pointer;           /* Pointer cursor on hover */
+  text-align: center;        /* Center text */
+  display: inline-block;     /* Allow it to behave like a button */
+}
 
+.button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
