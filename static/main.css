@@ -4,7 +4,7 @@ img {
   }
 
 .footer {
-    background-color: #bb8f00;
+    background-color: #0051bb;
     color: #ECF0F1;
     padding: 20px;
     text-align: center;
@@ -60,7 +60,7 @@ button:hover {
 }
 
 .bbutton button:hover {
-  background-color: #ff1a1a; 
+  background-image: linear-gradient(red, rgb(255, 123, 0));
   transform: scale(1.1);
   transition: transform 0.5s ease;
 }
@@ -72,7 +72,7 @@ button:hover {
 }
 
 .bbbutton button:hover {
-  background-color: #45a049; 
+  background-image: linear-gradient(rgb(43, 255, 0), rgb(0, 255, 157));
   transform: scale(1.1);
   transition: transform 0.5s ease;
 }
@@ -84,15 +84,87 @@ button:hover {
 }
 
 .bbbbutton button:hover {
-  background-color: #0b7dda; 
+  background-image: linear-gradient(rgb(0, 140, 255), rgb(96, 210, 255));
   transform: scale(1.1);
   transition: transform 0.5s ease;
 }
 
 .podzinas {
-  display: flex;              /* Use flexbox to arrange items in a row */
-  justify-content: space-around; /* Add space between buttons */
+  display: flex;              
+  justify-content: space-around; 
   align-items: center;        /* Vertically center items */
-  gap: 20px;                  /* Add space between the buttons */
+  gap: 30px;                  /* Add space between the buttons */
   margin: 20px;               /* Add some space around the container */
+}
+
+
+
+
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+
+
+
+header {
+  text-align: center;
+  background-image: linear-gradient(rgb(0, 38, 255), rgb(96, 210, 255));
+  color: white;
+  padding: 20px 0;
+  margin-bottom: 10px; 
+  border-bottom: 5px solid #000000; 
+  justify-content: space-between;
+  
+}
+
+header h1 {
+  font-size: 3rem; 
+  margin: 0;
+}
+
+
+
+
+
+.dutton {
+  display: flex; /* Enables flexbox for horizontal layout */
+  justify-content: center; /* Centers the buttons horizontally */
+  gap: 20px; /* Adds space between the buttons */
+  margin-top: 20px; /* Optional margin to add space above the buttons */
+}
+
+.dutton button {
+  background-image: linear-gradient(to right, rgb(0, 17, 255), rgb(76, 0, 255));
+  transform: scale(1);
+  transition: all 0.4s ease;
+  width: 200px; /* Reduced width to fit multiple buttons horizontally */
+  height: 50px;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-family: 'Arial', sans-serif;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  outline: none;
+}
+
+/* Hover effect */
+.dutton button:hover {
+  background-image: linear-gradient(to right, rgb(0, 255, 221), rgb(79, 111, 255));
+  transform: scale(1.1);
+  color: #ffffff;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
