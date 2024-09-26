@@ -9,29 +9,27 @@
 </head>
 
 <body>
-    <header>
-        <link rel="stylesheet" href="static/main.css">
-            <div class="podzinas">
-                    <div class="dutton">
-                        <meta charset="UTF-8">
-                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                        <title>RRBET</title>
-                        
-                        <a href="index.html">
-                            <button>home</button>
-                        </a>
 
-                        <a href="about.html">
-                            <button>about</button>
-                        </a>
 
-                        <a href="conatct.html">
-                            <button>conatct</button>
-                
-                        </a>
-                    <div class="dutton">
-            <div class="podzinas">
-    </header>
+
+
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="...">Services</a>
+                <ul class="dropdown-content">
+                    <li><a href="...">KAUTKAS</a></li>
+                    <li><a href="...">KAUTKAS2</a></li>
+                    <li><a href="...">KAUTKAS3</a></li>
+                </ul>
+            </li>
+            <li><a href="conatct.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
 
 
     <h2>RRBET</h2>
@@ -53,6 +51,47 @@
     </p>
 
 
+
+    <div class="podzinas">
+        <div class="bbutton">
+            <button type="button"> 
+                <img src="static/giphy.gif" alt="Save icon"/>
+                <br/>
+                LEAVE
+                <br/>
+                iziet ara no website
+            </button>
+            <button type="buttonn">
+                dasadad
+            </button>
+        </div>
+    
+        <div class="bbbutton">
+            <button type="button">
+                <img src="static/H.gif" alt="Save icon"/>
+                <br/>
+                LOGIN
+                <br/>
+                ienakt skaistaja majaslapa
+            </button>
+        </div>
+    
+        <div class="bbbbutton">
+            <button type="button">
+                <img src="static/R.gif" alt="Save icon"/>
+                <br/>
+                REGISTER
+                <br/>
+                esi dalibnieks musu majaslapa
+            </button>
+        </div>
+    </div>
+    
+
+
+
+
+
     <footer class="footer">
         <div class="footer-content">
             <p>&copy; 2024 RRBET. All rights reserved.</p>
@@ -69,42 +108,10 @@
 
 
 
-
-
-
-
-    <div class="podzinas">
-        <div class="bbutton">
-            <button type="button"> 
-                <img src="static/giphy.gif" alt="Save icon"/>
-                <br/>
-                LEAVE
-                <br/>
-                iziet ara no website
-                </button>
-        </div>
-
-        <div class="bbbutton">
-            <button type="button">
-                <img src="static/H.gif" alt="Save icon"/>
-            <br/>
-            LOGIN
-            <br/>
-                ienakt skaistaja majaslapa
-            </button>
-        </div>
-
-
-        <div class="bbbbutton">
-        <button type="button">
-            <img src="static/R.gif" alt="Save icon"/>
-        <br/>
-        REGISTER
-        <br/>
-            esi dalibnieks musu majaslapa
-        </button>
-        </div>
+    <div class="container">
+        <button id="darkModeToggle">Toggle Dark Mode</button>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
