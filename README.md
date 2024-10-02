@@ -1,6 +1,6 @@
 # JENOTI Raivis Reinfelds DP3-4
 
-Mērķis ir uztaisīt mājaslapu nakts klubam. Tajā būs iespējas apskatīt galeriju, kalendāra eventus, info utt. 
+Mērķis ir uztaisīt mājaslapu nakts klubam JENOTI. Tajā būs iespējas apskatīt galeriju, kalendāra eventus, info utt. 
 Mājas lapā varēs ari pierakstīties eventos un reģistrēt grupu. 
 Būs arī merch shop, kas ir uzņēmuma apdrukas drēbes.
 Website protams varēs ielagoties un uztaisīt jaunu kontu pie tam visi konti, pieteikumi, grupas utt. būs saglabātas datubāzē.
