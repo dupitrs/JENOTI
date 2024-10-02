@@ -10,6 +10,7 @@ toggleButton.addEventListener('click', () => {
 
 
 
+
 // Get the modal element
 var modal = document.getElementById("myModal");
 
