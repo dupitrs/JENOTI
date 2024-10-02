@@ -125,7 +125,7 @@ body.dark-mode {
 
 nav {
   background-color: #5e99d4;
-  height: 2cm;
+  height: 2.8cm;
   display: flex;
   align-items: center; /* Centers items vertically */
 }
@@ -151,30 +151,150 @@ nav {
 
 
 
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center; /* Center the menu */
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  position: relative;
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* No margin for the last item */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 18px;
+  display: block;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center; /* Center the menu */
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  position: relative;
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* No margin for the last item */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 18px;
+  display: block;
+}
+
+nav ul li a:hover, 
+nav ul li a.active {
+  background-color: #0004ff;
+  border-radius: 5px;
+}
+
 /* Dropdown content hidden by default */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color:  #003b6d;
+  background-color: #003b6d;
   z-index: 1;
   min-width: 160px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  top: 100%;
+  left: 0;
 }
 
 .dropdown-content a {
   color: white;
   text-decoration: none;
+  padding: 10px;
   display: block;
   text-align: left;
+  transition: background-color 0.3s ease;
 }
 
 .dropdown-content a:hover {
   background-color: #0004ff;
-  padding: 120px 160px;
 }
 
+/* Show the dropdown content when hovering */
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/* Remove active background when not hovering */
+nav ul li a.active:hover {
+  background-color: #0004ff;
+}
+nav ul li a.active {
+  background-color: #0004ff;
+  border-radius: 5px;
+}
+
+/* Dropdown content hidden by default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #5f5f7c;
+  z-index: 1;
+  min-width: 160px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  top: 100%;
+  left: 0;
+}
+
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #46465e;
+}
+
+/* Show the dropdown content when hovering */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Remove active background when not hovering */
+nav ul li a.active:hover {
+  background-color: #46465e;
+}
+
+/* Show the dropdown content and keep the hover effect on the parent when hovering */
+nav ul li:hover .dropdown-content {
+  display: block;
+}
+
+/* Keeps the hover effect on the parent item while hovering over dropdown */
+nav ul li:hover > a {
+  background-color: #46465e;
+  border-radius: 5px;
+}
+
 
 
 
@@ -188,7 +308,7 @@ nav {
 }
 
 button {
-  background-color: #a7bdec;
+  background-color: #6daae7;
   padding: 10px 20px;
   margin-top: 20px;
   font-size: 16px;
