@@ -44,75 +44,58 @@ h2 {
 }
 
 
+
+
+
+
+
+
 button {
   background-color: #f0f0f0;  
   border: 2px solid #ccc;     
   border-radius: 10px;        
   padding: 10px 20px;         
-  font-family: "Cursive Lucida Handwriting", "Lucida", Cursive;
   font-size: 16px;            
   text-align: center;
   cursor: pointer;
   transition: background-color 0.3s ease; 
 }
 
-button img {
-  width: 200px;  
-  height: auto; 
-}
-
-
-button:hover {
-  background-color: #ddd; 
-}
-
-
-.bbutton button {
-  background-color: #000000;  
-  color: white;               
-}
-
-.bbutton button:hover {
-  background-image: linear-gradient(red, rgb(255, 123, 0));
-  transform: scale(1.1);
-  transition: transform 0.5s ease;
-}
-
-
-.bbbutton button {
-  background-color: #000000;  
-  color: white;               
-}
-
-.bbbutton button:hover {
-  background-image: linear-gradient(rgb(43, 255, 0), rgb(0, 255, 157));
-  transform: scale(1.1);
-  transition: transform 0.5s ease;
-}
-
-
-.bbbbutton button {
-  background-color: #000000;  
-  color: white;               
-}
-
-.bbbbutton button:hover {
-  background-image: linear-gradient(rgb(0, 140, 255), rgb(96, 210, 255));
-  transform: scale(1.1);
-  transition: transform 0.5s ease;
-}
-
-.podzinas {
+.kartites {
   display: flex;              
   justify-content: space-around; 
   align-items: center;       
-  gap: 30px;                
+  gap: 10px;                
   margin: 20px;              
 }
 
+.kartite {
+  background-color: white;
+  width: 300px;
+  height: 650px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+}
 
+.kartite:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
 
+.kartite img {
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+}
 
+.kartite h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #333;
+}
 
 
 body {
@@ -128,14 +111,21 @@ body {
 body.dark-mode {
   font-family: 'Arial', sans-serif;
   background-color: #676767;
-  color: #ebedf3;
+  color: #ffffff;
   margin: 0;
   padding: 0;
   justify-content: space-between;
 }
 
+body.dark-mode .kartite{
+  background-color: #1d1b1b;
+  color: #ffffff;
+}
 
-
+body.dark-mode .kartite h2{
+  background-color: #1d1b1b;
+  color: #ffffff;
+}
 
 
 
@@ -255,7 +245,7 @@ button:hover {
 }
 
 
-.modal {
+.modal1 {
   display: none; 
   position: fixed;
   z-index: 1;
@@ -265,7 +255,7 @@ button:hover {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); 
 
-.modal-content {
+.modal1-content {
   background-color: rgb(255, 255, 255);
   margin: 15% auto;
   padding: 20px;
