@@ -1,6 +1,6 @@
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #ebedf3;
+  background-color: #e6e8ee;
   color: #333;
   margin: 0;
   padding: 0;
@@ -8,12 +8,17 @@ body {
   
 }
 
-img {
-    padding: 5px;
-    width: 200px;
-    
-  }
 
+
+.logo img{
+  padding: 5px;
+  width: 200px;
+}
+
+.logoo img{
+  padding: 5px;
+  width: 100px;
+}
 
 
 
@@ -21,7 +26,7 @@ img {
 /* JENOTU TEKSTS */
 .sakums{
   text-align: center;
-  float: right;
+  float: left;
   margin-right: 100px; 
   background-color: white;
   width: 600px;
@@ -31,7 +36,7 @@ img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   align-items: center;       
   gap: 10px;                
-  margin: 20px; 
+  margin: 20px;  
 }
 
 
@@ -42,8 +47,8 @@ img {
 
 
 /* KARTITES */
-.kartites {
-  display: flex;              
+.kartites {    
+  display: flex;         
   justify-content: space-around; 
   align-items: center;       
   gap: 10px;                
@@ -57,15 +62,16 @@ img {
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  transition: transform 1s ease;
   text-align: center;
 }
 
 .kartite:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
-  background-color: #97b1c7; /* Light color change */
+  transform: translateY(-13px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(160deg, #ffffff, rgba(255, 200, 21, 0.76));
 }
+
 
 .kartite img {
   object-fit: cover;
@@ -148,11 +154,19 @@ body.dark-mode footer{
 body.dark-mode .social-links a{
   color:#000000;
 }
+body.dark-mode .social-links a:hover{
+  color:#ffffff;
+}
 body.dark-mode .modal-content {
   background-color: #1d1b1b;
   color: #ffc815;
 }
-
+body.dark-mode .dropdown-content {
+  background-color: #cea213d7;
+}
+body.dark-mode button:hover {
+  background-color: #ffeba7;
+}
 
 
 
@@ -164,22 +178,22 @@ body.dark-mode .modal-content {
   margin: 0;
   padding: 0;
   display: flex; 
-  justify-content: center; 
+  justify-content: left; 
   width: 100%; 
 }
 
 .menu > li a {
   display: block;
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  height: 100%;
+  
 }
 
 nav {
-  background-color: #5e99d4;
-  height: 2.74cm;
+  background-color: #ffd037;
+  height: 3cm;
   display: flex;
   align-items: center; 
 }
@@ -198,7 +212,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   text-decoration: none;
   padding: 10px;
   font-size: 18px;
@@ -214,7 +228,8 @@ nav ul li:hover .dropdown-content {
 }
 
 nav ul li:hover > a {
-  background-color: #46465e;
+  background-color: #46465e2f;
+  color: #000000;
   border-radius: 5px;
 }
 
@@ -228,7 +243,7 @@ nav ul li:hover > a {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #5f5f7c;
+  background-color: #cea213d7;
   z-index: 1;
   min-width: 160px;
   border-radius: 5px;
@@ -247,7 +262,7 @@ nav ul li:hover > a {
 }
 
 .dropdown-content a:hover {
-  background-color: #46465e;
+  background-color: #ffe89ed7;
 }
 
 .dropdown:hover .dropdown-content {
@@ -262,20 +277,20 @@ nav ul li:hover > a {
 
 /* POGAS */
 button {
-  background-color: #6daae7;
+  background-color: #ffd037;
   padding: 10px 20px;
   margin-top: 20px;
   font-size: 16px;
   cursor: pointer;
   border: none;          
   border-radius: 8px;    
-  color: #fff;           
+  color: #000000;           
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   transition: transform 0.2s, background-color 0.2s;
 }
 
 button:hover {
-  background-color: #4682b4;
+  background-color: #fff4d2;
   transform: translateY(-1px);  
 }
 
@@ -287,8 +302,8 @@ button:hover {
 
 /* FOOTER */
 .footer {
-  background-color: #5e99d4;
-  color: #ECF0F1;
+  background-color: #ffd037;
+  color: #000000;
   padding: 20px;
   text-align: center;
 }
@@ -303,12 +318,12 @@ button:hover {
 
 .social-links a {
   margin: 0 10px;
-  color: #ECF0F1;
+  color: #000000;
   text-decoration: none;
 }
 
 .social-links a:hover {
-  color: #3498DB;
+  color: #ffffff;
 }
 
 
@@ -326,7 +341,7 @@ button:hover {
   width: 60px;
   height: 34px;
   margin-top: 10px;
-  margin-right: 40px;
+  margin-right: 60px;
 }
 
 .switch input {
@@ -352,7 +367,7 @@ button:hover {
   content: "";
   height: 26px;
   width: 26px;
-  left: 4px;
+  left: 1px;
   bottom: 4px;
   background-color: white;
   transition: 0.4s;
@@ -389,8 +404,8 @@ input:checked + .slider:before {
 }
 
 .modal-content {
-  background-color: #5e99d4;
-  color: #ffffff;
+  background-color: #ffd037;
+  color: #000000;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
