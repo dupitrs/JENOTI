@@ -42,6 +42,8 @@ Array.from(closeButtons).forEach((button, index) => {
     };
 });
 
+
+
 // Close modal if user clicks outside of it
 window.onclick = function(event) {
     var modals = ["myModal1", "myModal2", "myModal3"];
@@ -52,4 +54,13 @@ window.onclick = function(event) {
         }
     });
 };
+
+
+
+
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active'); 
+  }
+
 
